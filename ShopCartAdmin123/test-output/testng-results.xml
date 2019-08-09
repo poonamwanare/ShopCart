@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25053" started-at="2019-08-08T14:31:48Z" finished-at="2019-08-08T14:32:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25053" started-at="2019-08-08T14:31:48Z" finished-at="2019-08-08T14:32:13Z">
+      <class name="com.shopcart.dashboard.testcases.DashboardPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="setUp" is-config="true" duration-ms="9499" started-at="2019-08-08T14:31:48Z" finished-at="2019-08-08T14:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkDashboardPageTitleTest()[pri:1, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="checkDashboardPageTitleTest" duration-ms="34" started-at="2019-08-08T14:31:57Z" finished-at="2019-08-08T14:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDashboardPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-08T14:31:57Z" finished-at="2019-08-08T14:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="setUp" is-config="true" duration-ms="8456" started-at="2019-08-08T14:31:57Z" finished-at="2019-08-08T14:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkDashboardPageLabelTest()[pri:2, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="checkDashboardPageLabelTest" duration-ms="7010" started-at="2019-08-08T14:32:06Z" finished-at="2019-08-08T14:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDashboardPageLabelTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.shopcart.dashboard.testcases.DashboardPageTest@475530b9]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-08T14:32:13Z" finished-at="2019-08-08T14:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shopcart.dashboard.testcases.DashboardPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
