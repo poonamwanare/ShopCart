@@ -1,4 +1,4 @@
-package com.shopcart.dashboard.testcases;
+package com.shopcart.login.testcses;
 
 import java.io.FileNotFoundException;
 

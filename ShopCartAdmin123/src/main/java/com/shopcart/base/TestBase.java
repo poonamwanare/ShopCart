@@ -18,7 +18,7 @@ public class TestBase {
 	{
 		try {
 				prop = new Properties();
-				FileInputStream ip = new FileInputStream("C:\\Users\\SHYAM\\git\\repository\\ShopKart\\ShopCartAdmin123\\src\\main\\java\\com\\shopcart\\config\\config.properties");
+				FileInputStream ip = new FileInputStream("C:\\Users\\SHYAM\\git\\ShopCartGitRepo\\ShopCartAdmin123\\src\\main\\java\\com\\shopcart\\config\\config.properties");
 				prop.load(ip);
 			} 
 		catch (FileNotFoundException e) 
