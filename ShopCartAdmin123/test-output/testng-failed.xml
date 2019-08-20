@@ -5,7 +5,7 @@
     <classes>
       <class name="com.shopcart.customers.testcases.CustomerPageTest">
         <methods>
-          <include name="addNewCustomerTest"/>
+          <include name="clickOnNewCustomerBtnTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

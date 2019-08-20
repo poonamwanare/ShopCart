@@ -25,7 +25,7 @@ public class CustomersPage extends TestBase{
 	@FindBy(xpath="//h2[contains(text(),'Manage your Customers')]")
 	WebElement customerspagelabel;
 	
-	@FindBy(xpath=".//*[@id='page-header-desc-customer-new_customer']/i")
+	@FindBy(className="process-icon-new")
 	WebElement addnewcustomer;
 	
 	
@@ -47,16 +47,15 @@ public class CustomersPage extends TestBase{
 	@FindBy(id="passwd")
 	WebElement password;
 	
-	/*
-	 * @FindBy(id="groupBox_1") WebElement chkVisitor;
-	 * 
-	 * @FindBy(id="groupBox_2") WebElement chkGuest;
-	 * 
-	 * @FindBy(id="groupBox_3") WebElement chkCustomer;
-	 */
 	
 	@FindBy(className="process-icon-save")
 	WebElement savebutton;
+	
+	@FindBy(name="customerFilter_firstname")
+	WebElement searchcustbyfirstname;
+	
+	@FindBy(id="submitFilterButtoncustomer")
+	WebElement searchbtn;
 	
 	
 	public void movetoSubMenuCustomer()
@@ -91,13 +90,13 @@ public class CustomersPage extends TestBase{
 		emailId.sendKeys(emailid);
 		password.sendKeys(pwd);
 		savebutton.click();
-		
-		
-		
-		
-		
-		
-		
+	}
+	
+	public void searchCustomerByFirstname()
+	{
+		searchcustbyfirstname.clear();
+		searchcustbyfirstname.sendKeys("sam");
+		searchbtn.click();
 	}
 	 
 

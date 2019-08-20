@@ -34,7 +34,6 @@ public class CustomerPageTest extends TestBase{
 		initialization();
 		try {
 			loginpage = new LoginPage();
-			dashboardpage = new DashboardPage();
 			prestashoppage = new PrestaShopPage();
 			customerspage = new CustomersPage();
 			dashboardpage = loginpage.Username(prop.getProperty("username"), prop.getProperty("password"));
@@ -78,6 +77,11 @@ public class CustomerPageTest extends TestBase{
 		customerspage.createNewCustomer(firstname, lastname, email, password);
 	}
 	
+	@Test(priority=4)
+	public void searchCustomerByFirstnameTest()
+	{
+		customerspage.searchCustomerByFirstname();
+	}
 	
 	
 	@AfterMethod
