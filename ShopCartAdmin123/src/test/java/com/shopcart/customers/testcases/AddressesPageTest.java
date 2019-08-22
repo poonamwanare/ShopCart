@@ -9,9 +9,7 @@ import org.testng.annotations.Test;
 
 import com.shopcart.base.TestBase;
 import com.shopcart.customers.pages.AddressesPage;
-import com.shopcart.customers.pages.CustomersPage;
 import com.shopcart.dashboard.pages.DashboardPage;
-import com.shopcart.dashboard.pages.PrestaShopPage;
 import com.shopcart.login.LoginPage;
 
 public class AddressesPageTest extends TestBase{
@@ -32,14 +30,14 @@ public class AddressesPageTest extends TestBase{
 			loginpage = new LoginPage();
 			addressespage = new AddressesPage();
 			dashboardpage = loginpage.Username(prop.getProperty("username"), prop.getProperty("password"));
-			
+			addressespage.movetoSubMenuAddresses();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	@Test(priority=1)
-	public void gettitleTest()
+	public void getaddresspagetitleTest()
 	{
 		String title = addressespage.getAddressesPageTitle();
 		Assert.assertEquals(title, "Addresses • SHOPCART");
@@ -49,6 +47,11 @@ public class AddressesPageTest extends TestBase{
 		Assert.assertEquals(label, "Addresses");
 		System.out.println(label);
 		System.out.println("We are successfully reached on Addresses Page");
+	}
+	@Test(priority=2)
+	public void editAdressTest()
+	{
+		addressespage.editAddress();
 	}
 	
 	
