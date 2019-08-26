@@ -2,6 +2,7 @@ package com.shopcart.catlog.pages;
 
 import java.io.FileNotFoundException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -67,6 +68,13 @@ public class ProductsPage extends TestBase{
 	public void writeProductname()
 	{
 		writeproductname.sendKeys("Jollify Women's Rayon Crepe Red Top");
+	}
+	
+	public void scrollWindowDown() throws InterruptedException
+	{
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(1000);
 	}
 	
 	public void writeProductsShortDescription()

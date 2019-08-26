@@ -2,7 +2,7 @@ package com.shopcart.catlog.testcases;
 
 import java.io.FileNotFoundException;
 
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -57,10 +57,7 @@ public class ProductsPageTest extends TestBase{
 	public void shortDescriptionTest() throws InterruptedException
 	{
 		
-		JavascriptExecutor js = ((JavascriptExecutor) driver);
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		Thread.sleep(1000);
-		
+		productspage.scrollWindowDown();
 		productspage.clickonAddNewProductButton();
 		driver.switchTo().frame("description_short_1_ifr");
 		productspage.writeProductsShortDescription();
@@ -70,10 +67,7 @@ public class ProductsPageTest extends TestBase{
 	public void descriptionTest() throws InterruptedException
 	{
 		
-		JavascriptExecutor js = ((JavascriptExecutor) driver);
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		Thread.sleep(1000);
-		
+		productspage.scrollWindowDown();
 		productspage.clickonAddNewProductButton();
 		driver.switchTo().frame("description_1_ifr");
 		productspage.writeProductsDescription();
